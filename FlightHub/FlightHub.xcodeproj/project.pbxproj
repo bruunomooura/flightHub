@@ -11,10 +11,16 @@
 		3FA86F742CB48AF40000FDF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA86F6F2CB48AF40000FDF8 /* Assets.xcassets */; };
 		3FA86F762CB48AF40000FDF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA86F6B2CB48AF40000FDF8 /* AppDelegate.swift */; };
 		3FA86F772CB48AF40000FDF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA86F6D2CB48AF40000FDF8 /* SceneDelegate.swift */; };
-		3FA86F782CB48AF40000FDF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA86F712CB48AF40000FDF8 /* ViewController.swift */; };
 		3FA86F7B2CB48B0B0000FDF8 /* FlightHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA86F792CB48B0B0000FDF8 /* FlightHubTests.swift */; };
 		3FA86F7F2CB48B0E0000FDF8 /* FlightHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA86F7C2CB48B0E0000FDF8 /* FlightHubUITests.swift */; };
 		3FA86F802CB48B0E0000FDF8 /* FlightHubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA86F7D2CB48B0E0000FDF8 /* FlightHubUITestsLaunchTests.swift */; };
+		3FA86F8D2CB56C630000FDF8 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA86F8C2CB56C630000FDF8 /* ViewCode.swift */; };
+		3FA86F8F2CB56F7A0000FDF8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA86F8E2CB56F7A0000FDF8 /* HomeVC.swift */; };
+		3FA86F932CB56FA00000FDF8 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA86F922CB56FA00000FDF8 /* HomeScreen.swift */; };
+		3FA86F952CB56FD50000FDF8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA86F942CB56FD50000FDF8 /* HomeViewModel.swift */; };
+		3FA86F9A2CB5714D0000FDF8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FA86F982CB5714D0000FDF8 /* Localizable.strings */; };
+		3FA86F9D2CB574020000FDF8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA86F9C2CB574020000FDF8 /* String+Extensions.swift */; };
+		3FA86F9F2CB583A60000FDF8 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA86F9E2CB583A60000FDF8 /* UIButton+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +49,17 @@
 		3FA86F6D2CB48AF40000FDF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3FA86F6F2CB48AF40000FDF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FA86F702CB48AF40000FDF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FA86F712CB48AF40000FDF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FA86F792CB48B0B0000FDF8 /* FlightHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightHubTests.swift; sourceTree = "<group>"; };
 		3FA86F7C2CB48B0E0000FDF8 /* FlightHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightHubUITests.swift; sourceTree = "<group>"; };
 		3FA86F7D2CB48B0E0000FDF8 /* FlightHubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightHubUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3FA86F8C2CB56C630000FDF8 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		3FA86F8E2CB56F7A0000FDF8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		3FA86F922CB56FA00000FDF8 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		3FA86F942CB56FD50000FDF8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3FA86F992CB5714D0000FDF8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3FA86F9B2CB571520000FDF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3FA86F9C2CB574020000FDF8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		3FA86F9E2CB583A60000FDF8 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +121,10 @@
 			isa = PBXGroup;
 			children = (
 				3FA86F6E2CB48AF40000FDF8 /* Aplication */,
-				3FA86F6F2CB48AF40000FDF8 /* Assets.xcassets */,
+				3FA86F812CB56B7C0000FDF8 /* Sources */,
+				3FA86F852CB56BD60000FDF8 /* Utilities */,
+				3FA86F862CB56BDF0000FDF8 /* Resources */,
 				3FA86F702CB48AF40000FDF8 /* Info.plist */,
-				3FA86F712CB48AF40000FDF8 /* ViewController.swift */,
 			);
 			path = FlightHub;
 			sourceTree = "<group>";
@@ -130,6 +144,99 @@
 				3FA86F7D2CB48B0E0000FDF8 /* FlightHubUITestsLaunchTests.swift */,
 			);
 			path = FlightHubUITests;
+			sourceTree = "<group>";
+		};
+		3FA86F812CB56B7C0000FDF8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3FA86F822CB56B970000FDF8 /* Home */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3FA86F822CB56B970000FDF8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3FA86F832CB56BA20000FDF8 /* View */,
+				3FA86F842CB56BAF0000FDF8 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3FA86F832CB56BA20000FDF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FA86F8E2CB56F7A0000FDF8 /* HomeVC.swift */,
+				3FA86F922CB56FA00000FDF8 /* HomeScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FA86F842CB56BAF0000FDF8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3FA86F942CB56FD50000FDF8 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3FA86F852CB56BD60000FDF8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3FA86F8B2CB56C330000FDF8 /* Extensions */,
+				3FA86F8A2CB56C280000FDF8 /* Protocols */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3FA86F862CB56BDF0000FDF8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3FA86F892CB56C040000FDF8 /* Assets */,
+				3FA86F882CB56BFB0000FDF8 /* Strings */,
+				3FA86F872CB56BF20000FDF8 /* Type */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3FA86F872CB56BF20000FDF8 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		3FA86F882CB56BFB0000FDF8 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				3FA86F982CB5714D0000FDF8 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		3FA86F892CB56C040000FDF8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3FA86F6F2CB48AF40000FDF8 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3FA86F8A2CB56C280000FDF8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3FA86F8C2CB56C630000FDF8 /* ViewCode.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3FA86F8B2CB56C330000FDF8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3FA86F9C2CB574020000FDF8 /* String+Extensions.swift */,
+				3FA86F9E2CB583A60000FDF8 /* UIButton+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FA86F732CB48AF40000FDF8 /* LaunchScreen.storyboard in Resources */,
+				3FA86F9A2CB5714D0000FDF8 /* Localizable.strings in Resources */,
 				3FA86F742CB48AF40000FDF8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,8 +378,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FA86F762CB48AF40000FDF8 /* AppDelegate.swift in Sources */,
+				3FA86F9F2CB583A60000FDF8 /* UIButton+Extensions.swift in Sources */,
+				3FA86F9D2CB574020000FDF8 /* String+Extensions.swift in Sources */,
+				3FA86F952CB56FD50000FDF8 /* HomeViewModel.swift in Sources */,
+				3FA86F932CB56FA00000FDF8 /* HomeScreen.swift in Sources */,
+				3FA86F8F2CB56F7A0000FDF8 /* HomeVC.swift in Sources */,
 				3FA86F772CB48AF40000FDF8 /* SceneDelegate.swift in Sources */,
-				3FA86F782CB48AF40000FDF8 /* ViewController.swift in Sources */,
+				3FA86F8D2CB56C630000FDF8 /* ViewCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +420,18 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		3FA86F982CB5714D0000FDF8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FA86F992CB5714D0000FDF8 /* pt-BR */,
+				3FA86F9B2CB571520000FDF8 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		3FA86F5E2CB486290000FDF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -320,8 +445,7 @@
 				INFOPLIST_FILE = FlightHub/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,8 +471,7 @@
 				INFOPLIST_FILE = FlightHub/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

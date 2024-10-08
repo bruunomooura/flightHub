@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  FlightHub
+
+  Created by Bruno Moura on 08/10/24.
+  
+*/
+
+// MARK: - Home
+"home.description" = "O lugar ideal para gerenciar os voos da sua companhia aérea!";
+"home.button.title" = "Quero começar!";
