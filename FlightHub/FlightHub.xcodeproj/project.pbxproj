@@ -41,6 +41,8 @@
 		3FAC1E9B2CB8475800B2B33F /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC1E9A2CB8475800B2B33F /* View+Extensions.swift */; };
 		3FAC1E9D2CB847A000B2B33F /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC1E9C2CB847A000B2B33F /* Color+Extensions.swift */; };
 		3FAC1E9F2CB84A0E00B2B33F /* ButtonStyle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC1E9E2CB84A0E00B2B33F /* ButtonStyle+Extensions.swift */; };
+		3FBC7B252CB9C31A00FBCE2B /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC7B242CB9C31A00FBCE2B /* CustomAlert.swift */; };
+		3FBC7B272CB9C9BC00FBCE2B /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC7B262CB9C9BC00FBCE2B /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		3FAC1E9A2CB8475800B2B33F /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		3FAC1E9C2CB847A000B2B33F /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		3FAC1E9E2CB84A0E00B2B33F /* ButtonStyle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonStyle+Extensions.swift"; sourceTree = "<group>"; };
+		3FBC7B242CB9C31A00FBCE2B /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		3FBC7B262CB9C9BC00FBCE2B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +290,7 @@
 				3FAC1E9C2CB847A000B2B33F /* Color+Extensions.swift */,
 				3FA86F9C2CB574020000FDF8 /* String+Extensions.swift */,
 				3FA86F9E2CB583A60000FDF8 /* UIButton+Extensions.swift */,
+				3FBC7B262CB9C9BC00FBCE2B /* UIViewController+Extensions.swift */,
 				3FAC1E9A2CB8475800B2B33F /* View+Extensions.swift */,
 			);
 			path = Extensions;
@@ -374,6 +379,7 @@
 		3FAC1E972CB809EA00B2B33F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3FBC7B242CB9C31A00FBCE2B /* CustomAlert.swift */,
 				3FAC1E982CB80AF800B2B33F /* CustomFilter.swift */,
 			);
 			path = Components;
@@ -545,6 +551,8 @@
 				3FA86FB82CB5A9400000FDF8 /* FlightsScreen.swift in Sources */,
 				3FAC1E992CB80AF800B2B33F /* CustomFilter.swift in Sources */,
 				3FA86FBB2CB5AA2E0000FDF8 /* Flight.swift in Sources */,
+				3FBC7B252CB9C31A00FBCE2B /* CustomAlert.swift in Sources */,
+				3FBC7B272CB9C9BC00FBCE2B /* UIViewController+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -213,6 +213,25 @@ extension FlightsVC: FlightsViewModelProtocol {
     }
     
     /**
+     Displays an error alert when loading flight data fails.
+     
+     - Parameters:
+     - title: The title of the alert.
+     - message: The message providing details about the error.
+     */
+    func errorLoadFlight(title: String, message: String) {
+        let alert = CustomAlert(presenter: self)
+        DispatchQueue.main.async {
+            alert.alertConfirmation(
+                title: title,
+                message: message,
+                confirmTitle: "useful.tryAgain".localized) {
+                    self.loadFlightsData()
+                }
+        }
+    }
+    
+    /**
      Updates the table view with flights based on the applied filter.
      
      - Parameter content: The filtered list of flights.

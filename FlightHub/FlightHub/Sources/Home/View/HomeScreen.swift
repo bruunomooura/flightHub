@@ -36,7 +36,7 @@ class HomeScreen: UIView {
         label.numberOfLines = 0
         label.textColor = .white
         label.isAccessibilityElement = true
-        label.accessibilityTraits = .staticText
+        label.accessibilityTraits = .notEnabled
         return label
     }()
 

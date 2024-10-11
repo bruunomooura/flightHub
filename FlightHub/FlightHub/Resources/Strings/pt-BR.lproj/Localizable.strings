@@ -6,6 +6,12 @@
   
 */
 
+// MARK: - Useful
+"useful.cancel" = "Cancelar";
+"useful.confirm" = "Confirmar";
+"useful.ok" = "Ok";
+"useful.tryAgain" = "Tentar Novamente";
+
 // MARK: - Home
 "home.description" = "O lugar ideal para gerenciar os voos da sua companhia aérea!";
 "home.button.title" = "Quero começar!";
@@ -30,6 +36,9 @@
 "flights.flightArrivalAirportLabel.accessibilityLabel" = "Aeroporto de chegada";
 "flights.flightAirplaneNameLabel.accessibilityLabel" = "Modelo da aeronave utilizada";
 
+"flights.alert.error.title" = "Erro!";
+"flights.alert.error.message" = "Erro ao carregar os voos. Deseja tentar novamente?";
+
 // MARK: - FlightCompletionStatus
 "flightCompletionStatus.delayed" = "Atrasou";
 "flightCompletionStatus.canceled" = "Cancelado";
@@ -53,17 +62,12 @@
 
 "customFilter.label.title.accessibilityLabel" = "Filtros disponíveis";
 "customFilter.label.title..accessibilityHint" = "Toque no filtro que deseja aplicar. Só é possível selecionar um filtro por vez";
-
 "customFilter.button.eraser.accessibilityLabel" = "Limpar seleção";
 "customFilter.button.eraser.accessibilityHint" = "Toque para remover os filtros e retornar à tela anterior";
-
 "customFilter.filterOptions.selected.accessibilityHint" = "Este filtro já está selecionado";
 "customFilter.filterOptions.notSelected.accessibilityHint" = "Toque uma vez para selecionar este filtro";
-
 "customFilter.filterOptions.accessibilityLabel" = "Lista de filtros";
-
 "customFilter.button.cancel.accessibilityLabel" = "Cancelar";
 "customFilter.button.cancel.accessibilityHint" = "Toque uma vez para fechar a tela sem alterar os filtros";
-
 "customFilter.button.filter.accessibilityLabel" = "Aplicar filtro";
 "customFilter.button.filter.accessibilityHint" = "Toque uma vez para aplicar o filtro selecionado e retornar à tela anterior";

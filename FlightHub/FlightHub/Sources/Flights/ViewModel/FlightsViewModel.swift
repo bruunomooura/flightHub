@@ -10,6 +10,7 @@ import Foundation
 protocol FlightsViewModelProtocol: AnyObject {
     func searchText(content: [Flight])
     func updateData(content: [Flight])
+    func errorLoadFlight(title: String, message: String)
     func filterFlights(content: [Flight])
 }
 
@@ -81,6 +82,8 @@ extension FlightsViewModel {
             self.isLoading = false
         } catch {
             self.isLoading = false
+            self.delegate?.errorLoadFlight(title: "flights.alert.error.title".localized,
+                                           message: "flights.alert.error.message".localized)
             print("Failed to fetch flights: \(error.localizedDescription)")
         }
         
