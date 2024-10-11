@@ -8,7 +8,7 @@
 import Foundation
 
 extension String {
-    // MARK: Dynamic Variables
+    // MARK: Localized
     /// Just calling this variable to any string you can obtain its localized version.
     /// Arguments can be applied using the same SwiftUI Text() format:
     ///     "key \(argument)".localized
@@ -22,4 +22,21 @@ extension String {
             return String(localized: LocalizationValue(self))
         }
     }
+    
+    // MARK: Formatted date
+        /// Returns the date formatted from "yyyy-MM-dd" to "dd/MM/yyyy".
+        /// Returns the original string if conversion fails.
+    var formattedDate: String {
+        let inputFormatter = DateFormatter()
+        inputFormatter.dateFormat = "yyyy-MM-dd"
+        
+        let outputFormatter = DateFormatter()
+        outputFormatter.dateFormat = "dd/MM/yyyy"
+        
+        if let date = inputFormatter.date(from: self) {
+            return outputFormatter.string(from: date)
+        }
+        return self
+    }
+    
 }

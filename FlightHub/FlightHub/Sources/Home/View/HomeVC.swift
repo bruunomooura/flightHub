@@ -31,7 +31,11 @@ class HomeVC: UIViewController {
 
 extension HomeVC: HomeScreenProtocol {
     func didTapWelcomeButton() {
-        navigationController?.pushViewController(UIViewController(), animated: true)
+        let flightsService = AppConfig.flightsService()
+        let flightsManager = FlightsManager()
+        let viewModel = FlightsViewModel(flightsService: flightsService, flightsManager: flightsManager)
+        let flightsVC = FlightsVC(viewModel: viewModel)
+        navigationController?.pushViewController(flightsVC, animated: true)
     }
 }
 

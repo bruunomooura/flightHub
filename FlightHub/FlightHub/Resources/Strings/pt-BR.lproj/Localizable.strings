@@ -9,3 +9,61 @@
 // MARK: - Home
 "home.description" = "O lugar ideal para gerenciar os voos da sua companhia aérea!";
 "home.button.title" = "Quero começar!";
+
+// MARK: - Flights
+"flights.title" = "Voos";
+"flights.searchBar.placeholder" = "Buscar por ID de voo";
+"flights.searchBar.accessibilityHint" = "Digite o ID do voo e pressione Enter para buscar.";
+"flights.filterButton.accessibilityLabel" = "Filtrar voos";
+"flights.filterButton.accessibilityHint" = "Filtra os voos pelo status";
+"flights.toolBar.button.title" = "Concluído";
+"flights.title.noResults" = "Nenhum voo \nencontrado";
+
+"flights.flightIdLabel.accessibilityLabel" = "Id do voo";
+"flights.flightStatusLabel.accessibilityLabel" = "Status do voo";
+"flights.flightCompletionStatusLabel.accessibilityLabel" = "Pontualidade do voo";
+"flights.flightDepartureDateLabel.accessibilityLabel" = "Data de partida";
+"flights.flightArrivalDateLabel.accessibilityLabel" = "Data de chegada";
+"flights.flightDepartureTimeLabel.accessibilityLabel" = "Horário de partida";
+"flights.flightArrivalTimeLabel.accessibilityLabel" = "Horário de chegada";
+"flights.flightDepartureAirportLabel.accessibilityLabel" = "Aeroporto de partida";
+"flights.flightArrivalAirportLabel.accessibilityLabel" = "Aeroporto de chegada";
+"flights.flightAirplaneNameLabel.accessibilityLabel" = "Modelo da aeronave utilizada";
+
+// MARK: - FlightCompletionStatus
+"flightCompletionStatus.delayed" = "Atrasou";
+"flightCompletionStatus.canceled" = "Cancelado";
+"flightCompletionStatus.onTime" = "No Horário";
+
+// MARK: - FlightStatus
+"flightStatus.upcoming" = "A realizar";
+"flightStatus.canceled" = "Cancelado";
+"flightStatus.completed" = "Concluído";
+"flightStatus.inFlight" = "Em viagem";
+
+"flightStatus.title.upcoming" = "Voos a realizar";
+"flightStatus.title.canceled" = "Voos cancelados";
+"flightStatus.title.completed" = "Voos concluídos";
+"flightStatus.title.inFlight" = "Voos em viagem";
+
+// MARK: - CustomFilter
+"customFilter.label.title" = "Selecione uma opção";
+"customFilter.button.cancel" = "Cancelar";
+"customFilter.button.filter" = "Filtrar";
+
+"customFilter.label.title.accessibilityLabel" = "Filtros disponíveis";
+"customFilter.label.title..accessibilityHint" = "Toque no filtro que deseja aplicar. Só é possível selecionar um filtro por vez";
+
+"customFilter.button.eraser.accessibilityLabel" = "Limpar seleção";
+"customFilter.button.eraser.accessibilityHint" = "Toque para remover os filtros e retornar à tela anterior";
+
+"customFilter.filterOptions.selected.accessibilityHint" = "Este filtro já está selecionado";
+"customFilter.filterOptions.notSelected.accessibilityHint" = "Toque uma vez para selecionar este filtro";
+
+"customFilter.filterOptions.accessibilityLabel" = "Lista de filtros";
+
+"customFilter.button.cancel.accessibilityLabel" = "Cancelar";
+"customFilter.button.cancel.accessibilityHint" = "Toque uma vez para fechar a tela sem alterar os filtros";
+
+"customFilter.button.filter.accessibilityLabel" = "Aplicar filtro";
+"customFilter.button.filter.accessibilityHint" = "Toque uma vez para aplicar o filtro selecionado e retornar à tela anterior";
