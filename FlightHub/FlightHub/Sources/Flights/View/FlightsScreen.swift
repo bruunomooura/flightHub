@@ -65,18 +65,18 @@ class FlightsScreen: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         
         let configuration = UIImage.SymbolConfiguration(
-            pointSize: 25,
+            pointSize: 30,
             weight: .regular,
             scale: .default)
         let image = UIImage(
-            systemName: "line.horizontal.3.decrease.circle")?
+            systemName: SystemImage.filter.rawValue)?
             .withConfiguration(configuration)
         
         button.setImage(image, for: .normal)
         button.clipsToBounds = true
         button.layer.cornerRadius = 10
         button.isAccessibilityElement = true
-        button.backgroundColor = .white
+        button.backgroundColor = .white.withAlphaComponent(0.96)
         button.accessibilityTraits = .button
         button.accessibilityLabel = "flights.filterButton.accessibilityLabel".localized
         button.accessibilityHint = "flights.filterButton.accessibilityHint".localized
@@ -255,6 +255,36 @@ extension FlightsScreen {
         countFlightsLabel.accessibilityValue = "flights.countFlightsLabel.text \(count)".localized
     }
     
+    // MARK: Update filter button icon
+    /**
+     Updates the icon of the filter button based on the current flight status.
+
+     This method configures the icon of the filter button by checking if a filter is applied or not. It changes the icon and its color accordingly to visually indicate the filtering status to the user.
+
+     - Parameter filter: The current flight status filter. If `nil`, indicates no filter is applied; otherwise, it indicates an active filter.
+     */
+    public func updateIconFilterButton(filter: FlightStatus?) {
+        let iconConfiguration = UIImage.SymbolConfiguration(
+            pointSize: 30,
+            weight: .regular,
+            scale: .default
+        )
+        
+        let systemImageName = filter == nil
+        ? SystemImage.filter.rawValue
+        : SystemImage.filterApplied.rawValue
+        
+        let colorSet: UIColor = filter == nil
+        ? .background
+        : .darkGreen
+        
+        let iconImage = UIImage(systemName: systemImageName)?
+            .withConfiguration(iconConfiguration)
+            .withTintColor(colorSet, renderingMode: .alwaysOriginal)
+        
+        filterButton.setImage(iconImage, for: .normal)
+    }
+    
     // MARK: Hide Keyboard
     /**
      Dismisses the keyboard by resigning the search bar's first responder status.
@@ -295,7 +325,6 @@ extension FlightsScreen: ViewCode {
             verticalStackView.topAnchor.constraint(equalTo: horizontalStackView.bottomAnchor),
             verticalStackView.leadingAnchor.constraint(equalTo: horizontalStackView.leadingAnchor),
             verticalStackView.trailingAnchor.constraint(equalTo: horizontalStackView.trailingAnchor),
-//            countFlightsLabel.heightAnchor.constraint(equalToConstant: 30),
             
             tableView.topAnchor.constraint(equalTo: verticalStackView.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor),

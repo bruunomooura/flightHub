@@ -43,6 +43,7 @@
 		3FAC1E9F2CB84A0E00B2B33F /* ButtonStyle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC1E9E2CB84A0E00B2B33F /* ButtonStyle+Extensions.swift */; };
 		3FBC7B252CB9C31A00FBCE2B /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC7B242CB9C31A00FBCE2B /* CustomAlert.swift */; };
 		3FBC7B272CB9C9BC00FBCE2B /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC7B262CB9C9BC00FBCE2B /* UIViewController+Extensions.swift */; };
+		3FBC7B292CB9FE7700FBCE2B /* SystemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC7B282CB9FE7700FBCE2B /* SystemImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		3FAC1E9E2CB84A0E00B2B33F /* ButtonStyle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonStyle+Extensions.swift"; sourceTree = "<group>"; };
 		3FBC7B242CB9C31A00FBCE2B /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		3FBC7B262CB9C9BC00FBCE2B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		3FBC7B282CB9FE7700FBCE2B /* SystemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 		3FA86F872CB56BF20000FDF8 /* Type */ = {
 			isa = PBXGroup;
 			children = (
+				3FBC7B282CB9FE7700FBCE2B /* SystemImage.swift */,
 			);
 			path = Type;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				3FA86FCE2CB5BCAB0000FDF8 /* AppConfig.swift in Sources */,
 				3FA86F9D2CB574020000FDF8 /* String+Extensions.swift in Sources */,
 				3FA86FC12CB5AB2A0000FDF8 /* MockServiceManager.swift in Sources */,
+				3FBC7B292CB9FE7700FBCE2B /* SystemImage.swift in Sources */,
 				3FAC1E9D2CB847A000B2B33F /* Color+Extensions.swift in Sources */,
 				3FAC1E962CB803BB00B2B33F /* FilterableProtocol.swift in Sources */,
 				3FA86FC32CB5AB740000FDF8 /* JSONDecoderService.swift in Sources */,

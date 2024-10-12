@@ -114,7 +114,7 @@ class FlightTableViewCell: UITableViewCell {
     private lazy var flightDepartureImageView: UIImageView = {
         let imageView: UIImageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(systemName: "airplane.departure")
+        imageView.image = UIImage(systemName: SystemImage.airplaneDeparture.rawValue)
         imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = .clear
         return imageView
@@ -123,7 +123,7 @@ class FlightTableViewCell: UITableViewCell {
     private lazy var flightArrivalImageView: UIImageView = {
         let imageView: UIImageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(systemName: "airplane.arrival")
+        imageView.image = UIImage(systemName: SystemImage.airplaneArrival.rawValue)
         imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = .clear
         return imageView

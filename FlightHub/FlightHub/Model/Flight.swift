@@ -123,13 +123,13 @@ enum FlightStatus: String, Decodable, FilterableProtocol, CaseIterable {
     var icon: String {
         switch self {
         case .upcoming:
-            return "calendar.badge.clock"
+            return SystemImage.calendarClock.rawValue
         case .canceled:
-            return "xmark.circle.fill"
+            return SystemImage.xMarkCircleFill.rawValue
         case .completed:
-            return "checkmark.circle"
+            return SystemImage.checkMarkCircle.rawValue
         case .inFlight:
-            return "airplane.circle.fill"
+            return SystemImage.airplaneCircleFill.rawValue
         }
     }
     

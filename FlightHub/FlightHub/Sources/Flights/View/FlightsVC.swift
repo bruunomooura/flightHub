@@ -244,6 +244,7 @@ extension FlightsVC: FlightsViewModelProtocol {
         screen?.reloadTableView()
         screen?.noResults(noResults: viewModel.noResults)
         screen?.updateCountFlights(content.count)
+        screen?.updateIconFilterButton(filter: viewModel.filterApplied)
     }
 }
 

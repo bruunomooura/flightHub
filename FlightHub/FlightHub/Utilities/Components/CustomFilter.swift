@@ -68,7 +68,7 @@ extension CustomFilter {
                     }
                 }
             } label: {
-                Image(systemName: "eraser.line.dashed.fill")
+                Image(systemName: SystemImage.eraserFill.rawValue)
                     .resizable()
                     .frame(width: 25, height: 25)
                     .foregroundStyle(.black)
@@ -100,14 +100,14 @@ extension CustomFilter {
                         Spacer()
                         
                         if selected == option {
-                            Image(systemName: "record.circle.fill")
+                            Image(systemName: SystemImage.puncturedCircle.rawValue)
                                 .resizable()
                                 .frame(width: 20, height: 20)
                                 .foregroundStyle(Color.white, Color.background)
                                 .matchedGeometryEffect(id: animationID, in: animation)
                                 .accessibilityHidden(true)
                         } else {
-                            Image(systemName: "circle.fill")
+                            Image(systemName: SystemImage.circleFill.rawValue)
                                 .resizable()
                                 .frame(width: 20, height: 20)
                                 .foregroundStyle(.background.opacity(0.2))
