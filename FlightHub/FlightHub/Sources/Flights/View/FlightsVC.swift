@@ -185,6 +185,7 @@ extension FlightsVC: FlightsScreenProtocol {
      Called when the filter button is tapped.
      */
     func didTapFilterButton() {
+        screen?.hideKeyboard()
         openFilterSwiftUI()
     }
 }
@@ -199,6 +200,7 @@ extension FlightsVC: FlightsViewModelProtocol {
         tableViewDataSource?.reloadTableView(with: content)
         screen?.reloadTableView()
         screen?.noResults(noResults: viewModel.noResults)
+        screen?.updateCountFlights(content.count)
     }
     
     /**
@@ -210,6 +212,7 @@ extension FlightsVC: FlightsViewModelProtocol {
         tableViewDataSource?.reloadTableView(with: content)
         screen?.reloadTableView()
         screen?.noResults(noResults: viewModel.noResults)
+        screen?.updateCountFlights(content.count)
     }
     
     /**
@@ -240,6 +243,7 @@ extension FlightsVC: FlightsViewModelProtocol {
         tableViewDataSource?.reloadTableView(with: content)
         screen?.reloadTableView()
         screen?.noResults(noResults: viewModel.noResults)
+        screen?.updateCountFlights(content.count)
     }
 }
 

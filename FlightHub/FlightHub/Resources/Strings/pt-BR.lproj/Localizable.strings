@@ -22,6 +22,8 @@
 "flights.searchBar.accessibilityHint" = "Digite o ID do voo e pressione Enter para buscar.";
 "flights.filterButton.accessibilityLabel" = "Filtrar voos";
 "flights.filterButton.accessibilityHint" = "Filtra os voos pelo status";
+"flights.countFlightsLabel.accessibilityLabel" = "Contagem de voos";
+"flights.countFlightsLabel.text %@" = "%@ voos encontrados";
 "flights.toolBar.button.title" = "Concluído";
 "flights.title.noResults" = "Nenhum voo \nencontrado";
 

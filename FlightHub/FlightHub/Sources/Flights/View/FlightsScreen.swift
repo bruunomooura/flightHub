@@ -86,7 +86,22 @@ class FlightsScreen: UIView {
         return button
     }()
     
-    private lazy var stackView: UIStackView = {
+    private lazy var countFlightsLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 18, weight: .semibold)
+        label.textAlignment = .left
+        label.numberOfLines = 1
+        label.text = "flights.countFlightsLabel.text \(0)".localized
+        label.textColor = .white
+        label.backgroundColor = .background
+        label.isAccessibilityElement = true
+        label.accessibilityLabel = "flights.countFlightsLabel.accessibilityLabel".localized
+        label.accessibilityTraits = .none
+        return label
+    }()
+    
+    private lazy var horizontalStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .horizontal
@@ -94,7 +109,23 @@ class FlightsScreen: UIView {
         stackView.isLayoutMarginsRelativeArrangement = true
         stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0,
                                                                      leading: 16,
-                                                                     bottom: 16,
+                                                                     bottom: 0,
+                                                                     trailing: 16)
+        stackView.backgroundColor = .background
+        stackView.alignment = .fill
+        stackView.distribution = .fill
+        return stackView
+    }()
+    
+    private lazy var verticalStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.spacing = 16
+        stackView.isLayoutMarginsRelativeArrangement = true
+        stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 10,
+                                                                     leading: 16,
+                                                                     bottom: 10,
                                                                      trailing: 16)
         stackView.backgroundColor = .background
         stackView.alignment = .fill
@@ -206,6 +237,24 @@ extension FlightsScreen {
         noResultsLabel.isHidden = !noResults
     }
     
+    // MARK: Update Flights Count
+    /**
+     Updates the displayed count of flights in the UI with a cross-dissolve animation.
+
+     - Parameter count: The new count of flights to be displayed.
+     The label's text will be updated to show the count of flights, and its accessibility value will also be set accordingly.
+     */
+    public func updateCountFlights(_ count: Int) {
+        UIView.transition(
+            with: countFlightsLabel,
+            duration: 0.3,
+            options: .transitionCrossDissolve,
+            animations: {
+            self.countFlightsLabel.text = "flights.countFlightsLabel.text \(count)".localized
+        }, completion: nil)
+        countFlightsLabel.accessibilityValue = "flights.countFlightsLabel.text \(count)".localized
+    }
+    
     // MARK: Hide Keyboard
     /**
      Dismisses the keyboard by resigning the search bar's first responder status.
@@ -221,9 +270,11 @@ extension FlightsScreen: ViewCode {
      Adds the subviews to the main view.
      */
     func addSubviews() {
-        addSubview(stackView)
-        stackView.addArrangedSubview(searchBar)
-        stackView.addArrangedSubview(filterButton)
+        addSubview(horizontalStackView)
+        horizontalStackView.addArrangedSubview(searchBar)
+        horizontalStackView.addArrangedSubview(filterButton)
+        addSubview(verticalStackView)
+        verticalStackView.addArrangedSubview(countFlightsLabel)
         addSubview(tableView)
         addSubview(noResultsLabel)
     }
@@ -234,19 +285,24 @@ extension FlightsScreen: ViewCode {
      */
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            horizontalStackView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            horizontalStackView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            horizontalStackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             
             filterButton.heightAnchor.constraint(equalToConstant: 50),
             filterButton.widthAnchor.constraint(equalToConstant: 50),
             
-            tableView.topAnchor.constraint(equalTo: stackView.bottomAnchor),
+            verticalStackView.topAnchor.constraint(equalTo: horizontalStackView.bottomAnchor),
+            verticalStackView.leadingAnchor.constraint(equalTo: horizontalStackView.leadingAnchor),
+            verticalStackView.trailingAnchor.constraint(equalTo: horizontalStackView.trailingAnchor),
+//            countFlightsLabel.heightAnchor.constraint(equalToConstant: 30),
+            
+            tableView.topAnchor.constraint(equalTo: verticalStackView.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
-            noResultsLabel.topAnchor.constraint(equalTo: stackView.bottomAnchor),
+            noResultsLabel.topAnchor.constraint(equalTo: verticalStackView.bottomAnchor),
             noResultsLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
             noResultsLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
             noResultsLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50),

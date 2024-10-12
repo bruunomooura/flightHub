@@ -22,6 +22,8 @@
 "flights.searchBar.accessibilityHint" = "Enter the flight ID and press Enter to search.";
 "flights.filterButton.accessibilityLabel" = "Filter flights";
 "flights.filterButton.accessibilityHint" = "Filters flights by status";
+"flights.countFlightsLabel.accessibilityLabel" = "Flight count";
+"flights.countFlightsLabel.text %@" = "%@ flights found";
 "flights.toolBar.button.title" = "Done";
 "flights.title.noResults" = "No flights \nfound";
 
