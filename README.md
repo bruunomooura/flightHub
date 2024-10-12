@@ -34,6 +34,8 @@ FlightHub é um aplicativo iOS desenvolvido como parte de um teste técnico para
 
 7. **Customização**: Desenvolvido um `CustomAlert` reutilizável e várias extensões úteis.
 
+8. **Documentação**: As funções foram documentadas seguindo o padrão da Apple, de modo que, ao utilizar a combinação Option + click sobre uma função, os comentários inseridos são exibidos de forma clara e estruturada, semelhante à documentação nativa dos componentes da Apple.
+
 ## Como Executar o App
 
 1. Toque no botão "Quero começar" na tela inicial.
