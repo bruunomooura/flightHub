@@ -36,6 +36,8 @@ FlightHub é um aplicativo iOS desenvolvido como parte de um teste técnico para
 
 8. **Documentação**: As funções foram documentadas seguindo o padrão da Apple, de modo que, ao utilizar a combinação Option + click sobre uma função, os comentários inseridos são exibidos de forma clara e estruturada, semelhante à documentação nativa dos componentes da Apple.
 
+9. **Animações**: Foram utilizadas animações em SwiftUI. Ao trocar o filtro de voos, o seletor realiza um efeito de arrasto até a nova opção selecionada. Além disso, foi adicionada uma extensão ao ButtonStyle da Apple para suportar o efeito bouncy. Na tela de filtros, esse efeito foi aplicado aos botões “Cancelar” e “Filtrar”. Por fim, no UIKit, foi implementada uma animação sincronizada ao alterar o texto da label que exibe a contagem de voos.
+
 ## Como Executar o App
 
 1. Toque no botão "Quero começar" na tela inicial.
